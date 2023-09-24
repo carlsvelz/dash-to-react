@@ -1,0 +1,11 @@
+dash
+flask
+librosa
+numpy
+plotly
+pandas
+requests
+resampy
+soundfile
+tensorflow
+tensorflow-hub
