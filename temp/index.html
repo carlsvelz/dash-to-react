@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Displaying Messages in HTML</title>
+</head>
+
+<body>
+
+    <!-- Agrega un título -->
+    <h1>Messages Displayed in HTML</h1>
+
+    <!-- Agrega elementos donde mostrar los mensajes -->
+    <p id="mensaje1"></p>
+    <p id="mensaje2"></p>
+    <p id="mensaje3"></p>
+    <p id="mensaje4"></p>
+    <p id="mensaje5"></p>
+
+    <!-- Agrega un script tag para incluir el código JavaScript -->
+    <script>
+        // Mensaje 1: Imprimir un simple mensaje
+        document.getElementById("mensaje1").innerHTML = "Esto es divertido!";
+
+        // Mensaje 2: Imprimir una variable
+        let invitado = "Pedro";
+        document.getElementById("mensaje2").innerHTML = invitado;
+
+        // Mensaje 3: Imprimir varios valores a la vez
+        let edad = 21;
+        let mensaje3 = "El invitado " + invitado + " tiene " + edad + " años.";
+        document.getElementById("mensaje3").innerHTML = mensaje3;
+
+        // Mensaje 4: Imprimir un objeto
+        let coche = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            año: 2020
+        };
+        document.getElementById("mensaje4").innerHTML = JSON.stringify(coche);
+
+        // Mensaje 5: Imprimir un array
+        let frutas = ["manzana", "banano", "cereza"];
+        document.getElementById("mensaje5").innerHTML = frutas.join(", ");
+    </script>
+
+</body>
+
+</html>
